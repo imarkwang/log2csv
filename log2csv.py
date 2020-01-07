@@ -2,6 +2,7 @@ import csv
 
 
 headers = ['idx',
+           'core_id',
            'vlen',
            'vgrpdepth',
            'vgrpstride',
@@ -62,7 +63,7 @@ with open('test2.csv','w',newline='')as f:
     f_csv.writerows(rows)
  
 '''
-notvalid = [1,2,3,9,10,11,12,13,14,31,32,33,34,54,55]
+notvalid = [1,2,9,10,11,12,13,14,31,32,33,34,54,55]
 def  read_csv_row(fd):
     row_content = []
     for i in range(0,56):
